@@ -263,8 +263,8 @@ def actualizar_respuesta(n_clicks, pregunta):
                 #print(respuesta_split)
                 respuestas_dadas = respuestas_dadas_nueva # actualiza la variable global
                 return html.Div([                
-                    html.P(resumen_generado, style={'font-weight': 'bold'}),
-                    html.P(primeros_tres, style={'color': 'Black'}),
+                    html.P(resumen_generado, style={'font-weight': 'bold', 'font-size': '20px'}),
+                    html.P(primeros_tres, style={'color': 'Black', 'font-size': '20px'}),
                     html.Div([
                             html.H2("Artículos relacionados", style=estilo_titulo),
                             dash_table.DataTable(
